@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "OpenSans-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/OpenSans-Regular.woff") format("woff");
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/OpenSans-SemiBold.woff") format("woff");
+  font-display: optional;
+}
+
+.body {
+  background-color: #000;
+}
+
+.main {
+  height: 420px;
+  width: 1200px;
+  background-image: url(/logo/lines_02.png);
+}
+
+.container-logo {
+  position: absolute;
+  top: 119px;
+  left: 541px;
+  width: 112px;
+  height: 36px;
+}
+
+.text {
+  position: absolute;
+  top: 190px;
+  left: 530px;
+  color: #fefbfc;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 17px;
+  letter-spacing: 1.7px;
+}
+
+.Separator {
+  background-color: #fff;
+  position: absolute;
+  left: 493px;
+  top: 242px;
+  width: 230px;
+  height: 1px;
+  z-index: 12;
+}
+
+.social {
+  position: absolute;
+  left: 530px;
+  top: 280px;
+}
+
+.tw {
+  position: relative;
+  left: 28px;
+}
+
+.gl {
+  position: relative;
+  left: 70px;
+}
+
+.db {
+  position: relative;
+  left: 90px;
+}
+
+.copyright {
+  position: absolute;
+  top: 365px;
+  left: 489px;
+  color: #fefbfc;
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-size: 15px;
+}
+
+.copyright-kasper {
+  color: #19c8fa;
+}
