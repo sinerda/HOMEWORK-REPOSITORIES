@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "ProximaNova-Regular";
+  font-style: normal;
+  src: url("/fonts/ProximaNova-Regular.woff") format("woff");
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "ProximaNova-Light";
+  font-style: normal;
+  src: url("/fonts/ProximaNova-Light.woff") format("woff");
+  font-display: optional;
+}
+
+body {
+  margin: 0; /*сбрасываем стандартные отступы в ноль, чтобы не появлялись полосы прокрутки */
+}
+
+.main-div {
+  height: 100vh; /* растягиваем основной див на всю площадь браузера */
+  display: -webkit-flex;
+  display: flex; /* настраиваем флекс для колонок, т.к. они потомки основного дива */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.abc {
+  width: 225px; /* настраиваем колонки и флекс внутри них */
+  height: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* загружаем свою иконку для каждой колонки */
+#i1 {
+  background-image: url(/icons/icon1-Tablet.png);
+  filter: grayscale(100%) brightness(0%) invert(100%); /*делаем из синей иконки - белую*/
+}
+
+#i2 {
+  background-image: url(/icons/icon2-Settings.png);
+}
+
+#i3 {
+  background-image: url(/icons/icon3-Dashboard.png);
+}
+
+/* отдельный слой для бордера (круга) */
+.div-border {
+  width: 66px; /* настраиваем размеры */
+  height: 66px;
+  margin-bottom: 5px; /* отступ от параграфа */
+  border: 1px solid #2a69a6; /* рисуем бордер */
+  border-radius: 50%; /* делаем из него круг */
+  background-color: #2a69a6;
+}
+
+/* отдельный слой для иконки */
+.div-icon {
+  width: 66px; /* настраиваем отображение иконки */
+  height: 66px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.div-border:hover {
+  background-color: #fff; /* при наведении мышки фон бордера меняется */
+}
+
+/* при наведении мышки меняется цвет иконки в первой колонке */
+#i1:hover {
+  filter: hue-rotate(0deg);
+}
+
+/* при наведении мышки меняется цвет иконки в колонках 2 и 3 */
+#i2:hover {
+  filter: contrast(0.1) sepia(1) hue-rotate(175deg) brightness(55%)
+    saturate(4.5); /*делаем из белой иконки - синюю*/
+}
+
+#i3:hover {
+  filter: contrast(0.1) sepia(1) hue-rotate(175deg) brightness(55%)
+    saturate(4.5);
+}
+
+/* настраиваем Н2-заголовки */
+h2 {
+  color: #1a0000;
+  font-family: "ProximaNova-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase; /* заглавные буквы для текста */
+}
+
+/* настраиваем параграфы */
+p {
+  color: #9d9d9d;
+  font-family: "ProximaNova-Light", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0px; /* убираем отступы, чтобы содержимое влезло в div .abc */
+}
