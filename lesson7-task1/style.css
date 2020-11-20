@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  src: url("fonts/Montserrat-Regular.woff") format("woff");
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-style: normal;
+  src: url("fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "PTSans-Regular";
+  font-style: normal;
+  src: url("fonts/PTSans-Regular.woff") format("woff");
+  font-display: auto;
+}
+
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+body {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+header {
+  width: 540px;
+  margin-bottom: 75px;
+  margin-top: 150px;
+}
+
+.header-p1,
+h1,
+.header-p2 {
+  text-align: center;
+}
+
+.header-p1 {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+  color: #898f99;
+}
+
+h1 {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+  color: #0ec8cb;
+}
+
+.header-p2 {
+  font-family: "PTSans-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.categories {
+  height: 420px;
+  width: 940px;
+  margin-bottom: 60px;
+  display: flex;
+}
+
+.s {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: normal;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 45px;
+  padding-top: 25px;
+  background-color: #f7f7f7;
+}
+
+.di {
+  width: 65px;
+  height: 50px;
+  font-size: 60px;
+}
+
+.div-icon2 {
+  padding-top: 15px;
+}
+
+/* настраиваем Н2-заголовки */
+h2 {
+  color: #000;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  text-transform: uppercase; /* заглавные буквы для текста */
+  text-align: center;
+  word-wrap: break-word;
+  width: 170px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* настраиваем параграфы */
+p {
+  color: #777777;
+  font-family: "PTSans-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.42;
+  margin: 0;
+}
+
+/* ховеры */
+.s:hover {
+  background-color: #0ec8cb; /* при наведении мышки фон бордера меняется */
+}
+
+.s:hover h2 {
+  color: #fff;
+}
+
+.s:hover p {
+  color: #fff;
+}
+
+.s:hover .di {
+  color: #fff;
+}

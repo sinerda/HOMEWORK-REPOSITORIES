@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-- Lesson 7, Task 1 -- Sinyavskiy</title>
+     <script>        /* оживляем тайтл страницы */
+        var tit = document.title;
+        var c = 1;
+        //
+        function writetitle() {
+            document.title = tit.substring(0, c);
+            if (c == tit.length) {
+                c = 0; setTimeout("writetitle()", 10000)
+            } else {
+                c++;
+                setTimeout("writetitle()", 300)
+            }
+        }
+        writetitle()
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <!-- загружаем FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css"
+        integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <p class="header-p1">who we are</p>
+            <h1>Hello & Namaste</h1>
+            <p class="header-p2">We do not build websites but user experiences. We judge our performance according to the impact it makes</p>
+        </header>
+        <article class="categories">
+            <section class="s section1">
+                <div class="di div-icon1">
+                    <!-- иконка FontAwesome -->
+                    <i class="fas fa-anchor"></i> 
+                </div>
+                <h2>web design</h2>
+                <p>Fresh, lively and informative content, is key to any successful website, so take a look at your website's content on a
+                regular basis.</p>
+            </section>
+            <section class="s section2">
+                <div class="di div-icon2">
+                    <i class="far fa-gem"></i>
+                </div>
+                <h2 id="">web development</h2>
+                <p>Fresh, lively and informative content, is key to any successful website, so take a look at your website's content on a
+                regular basis.</p>
+            </section>
+            <section class="s section3">
+                <div class="di div-icon3">
+                    <i class="fas fa-glasses"></i>
+                </div>
+                <h2>Graphics</h2>
+                <p>Fresh, lively and informative content, is key to any successful website, so take a look at your website's content on a
+                regular basis.</p>
+            </section>
+            <section class="s section4">
+                <div class="di div-icon4">
+                    <i class="fas fa-tv"></i>
+                </div>
+                <h2>Illustrations</h2>
+                <p>Fresh, lively and informative content, is key to any successful website, so take a look at your website's content on a
+                regular basis.</p>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
