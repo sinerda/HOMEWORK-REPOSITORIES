@@ -1,0 +1,109 @@
+body {
+  margin: 25px;
+}
+
+main {
+  background-color: #3b3f45;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #4a4f56;
+  color: #eb7e7f;
+  text-align: center;
+  font-family: Trebuchet, Arial, sans-serif;
+}
+
+.header-name-of-page {
+  margin-bottom: 6px;
+}
+
+.header-text {
+  margin-top: 3px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.article-p-text {
+  background-color: #4a4f56;
+  width: 815px;
+  color: #eb7e7f;
+  text-align: center;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-size: 23px;
+}
+
+.chekbox {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  padding-left: 15px;
+  width: 800px;
+  background-color: #88839e;
+  color: #f9f9ec;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-size: 23px;
+}
+
+label {
+  display: block;
+}
+
+li {
+  list-style-type: none;
+  list-style-position: inside;
+  height: 62px;
+  margin-left: -15px;
+  line-height: 59px; /* выравниваем текст по вертикали внутри лишек */
+  user-select: none; /* отключаем выделение текста мышкой */
+}
+
+input[type="checkbox"] {
+  transform: scale(2);
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+span {
+  font-size: 13px;
+  color: #cdc6c6;
+}
+
+li:hover,
+label:hover,
+ul:hover {
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #625e77;
+  border-top: 4px #fff solid;
+  border-bottom: 4px #fff solid;
+}
+
+li:nth-child(even) {
+  background-color: #7a7593;
+}
+
+li:nth-child(even):hover {
+  background-color: #625e77;
+}
+
+/*
+/
+/  Сделать работающий селектор с :checked у меня не получилось. 
+/  Менял его самыми разными способами, но он всё равно не хочет работать. 
+/
+*/
+
+input[type="checkbox"]:checked + li {
+  background-color: magenta;
+  color: gold;
+  text-decoration: line-through;
+}
