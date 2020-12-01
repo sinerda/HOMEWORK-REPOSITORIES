@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "ProximaNova-Regular";
+  font-style: normal;
+  src: url("fonts/ProximaNova-Regular.woff") format("woff");
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  font-style: normal;
+  src: url("fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "FuturaPT-Heavy";
+  font-style: normal;
+  src: url("fonts/FuturaPT-Heavy.woff") format("woff");
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Georgia-Italic";
+  font-style: normal;
+  src: url("fonts/Georgia-Italic.woff") format("woff");
+  font-display: auto;
+}
+
+body {
+  background-color: #464f54;
+  min-height: 1050px;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  width: 1060px;
+  height: 752px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 0px #000000;
+}
+
+header {
+  position: absolute;
+}
+
+.title-input {
+  position: absolute;
+  left: 254px;
+  top: -102px;
+  width: 876px;
+  height: 187px;
+  background-color: #181818;
+  color: #fff;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.title-border {
+  position: relative;
+  width: 816px;
+  height: 86px;
+  margin-left: 60px;
+  top: 30px;
+  border-bottom: 3px solid #303030;
+}
+
+.title {
+  font-family: ProximaNova-Regular, sans-serif;
+  font-size: 15px;
+  letter-spacing: 6px;
+  color: #777777;
+  margin-bottom: 0px;
+  margin-top: 19px;
+}
+
+.like-tears {
+  font-family: PlayfairDisplay-Regular, serif;
+  font-size: 48px;
+  margin-top: -5px;
+  margin-bottom: 13px;
+}
+
+.cursor {
+  position: relative;
+  top: -65px;
+  left: 351px;
+  width: 2px;
+  height: 43px;
+  opacity: 1;
+}
+
+.control-bar {
+  position: absolute;
+  left: 318px;
+  top: 85px;
+  width: 770px;
+  height: 34px;
+  padding-top: 19px;
+  padding-bottom: 24px;
+  padding-left: 42px;
+  background-color: #f2b92b;
+  color: #fff;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+  opacity: 0.5;
+  width: 40px;
+  height: 40px;
+  padding-right: 13px;
+}
+
+.bold {
+  opacity: 1;
+}
+
+.left-border {
+  position: relative;
+  width: 785px;
+  height: 552px;
+  margin-left: 68px;
+  padding-left: 57px;
+  padding-top: 200px;
+  padding-right: 125px;
+  border-left: 2px solid #e8eced;
+}
+
+.name-date {
+  font-family: ProximaNova-Regular, sans-serif;
+  font-size: 19.84px;
+  letter-spacing: 4px;
+  margin-top: 0px;
+  color: #b5b5b5;
+  text-transform: uppercase;
+}
+
+.title-like-tears {
+  font-family: FuturaPT-Heavy, sans-serif;
+  font-size: 77.93px;
+  letter-spacing: 2.3793px;
+  color: #2a2a2a;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.where-am {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #8f8f8f;
+  font-size: 30px;
+  word-spacing: -3px;
+  margin-top: -7px;
+  margin-bottom: 40px;
+}
+
+.content {
+  font-family: Georgia-Regular, serif;
+  font-style: normal;
+  font-size: 26.92px;
+  text-align: justify;
+  line-height: 40.38px;
+  letter-spacing: 0.02px;
+  white-space: break-spaces;
+}
+
+span {
+  font-family: Georgia-Italic, serif;
+  font-size: 24px;
+}
