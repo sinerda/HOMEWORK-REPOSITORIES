@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("fonts/Raleway-Bold.woff") format("woff");
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Raleway-Heavy";
+  src: url("fonts/Raleway-Heavy.ttf") format("ttf");
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("fonts/Raleway-Light.ttf") format("ttf");
+  font-display: auto;
+}
+
+.body {
+  margin: 0;
+}
+
+.section1 {
+  height: 1000px;
+  background: url(img/full-img-1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.header {
+  width: auto;
+  height: 100px;
+  padding-left: calc(8%);
+  padding-right: calc(8%);
+  padding-top: 50px;
+}
+
+.header__logo {
+  float: left;
+}
+
+.header__menu {
+  float: right;
+  width: calc(62%);
+  padding-top: 19px;
+}
+
+.menu__link {
+  margin-left: 30px;
+  font-family: Raleway-Bold, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #262626;
+}
+
+.menu__link--active:hover {
+  border-top: #ff6033 solid 3px;
+  padding-top: 9px;
+}
+
+.div-content-1 {
+  position: relative;
+  left: 165px;
+  top: 209px;
+  width: 370px;
+  height: 257px;
+}
+
+.content__title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: "Raleway-Heavy", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  color: #262626;
+}
+
+.content__text {
+  font-family: "Raleway-Light", sans-serif;
+  font-size: 17px;
+  color: #262626;
+}
+
+.content__button {
+  margin-top: 20px;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  padding: 20px 40px 20px 40px;
+  background: #ff6033;
+  color: #fff;
+  font-family: "Raleway-Light", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 100;
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.icon-mouse {
+  position: absolute;
+  left: calc(50%);
+  top: 890px;
+}
+
+.section2 {
+  height: 700px;
+  background-color: #00bdbd;
+}
+
+.full-image-2 {
+  float: left;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  left: calc(10% - 50px);
+  top: calc(15%);
+  background: url(img/full-img-2.png) no-repeat center center;
+  background-size: cover;
+}
+
+.div-content-2 {
+  float: right;
+  position: relative;
+  right: 30px;
+  top: 200px;
+  width: 461px;
+  height: 290px;
+}
+
+.content__title--font-raleway-bold {
+  font-family: Raleway-Bold, sans-serif;
+}
+
+.content__title--white {
+  color: #fff;
+}
+
+.content__text--white {
+  color: #fff;
+}
