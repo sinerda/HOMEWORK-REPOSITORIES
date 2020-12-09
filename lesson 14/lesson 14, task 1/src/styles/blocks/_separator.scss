@@ -1,0 +1,21 @@
+.separator {
+  margin: 0 auto;
+  width: 455px;
+
+  &__line {
+    width: 452px;
+    border-bottom: 1px solid $yellow-mustard-color;
+  }
+
+  &__pic {
+    position: relative;
+    left: 215px;
+    top: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    background-image: url(../dist/img/bonfire-icon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
