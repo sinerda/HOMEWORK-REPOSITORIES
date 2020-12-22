@@ -1,0 +1,52 @@
+.button {
+    position: relative;
+    top: 1px;
+    width: 153px;
+    height: 65px;
+    border: 2px solid #fff;
+    margin: -5px;
+    background-color: #5474fd;
+    font-family: $font-A;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: $First-Color;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 63px;
+        background: rgba(243, 245, 250, 0.157);
+        transition: all 1.5s ease;
+    }
+
+    &:hover:before {
+        width: 100%;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        background-color: #3f58c7;
+        transition: all 0.1s ease;
+    }
+
+    &--transparent {
+        margin-top: 40px;
+        width: 225px;
+        height: 60px;
+        border: none;
+        font-size: 16px;
+        background: rgba(84, 115, 253, 0.774);
+    }
+
+    &--transparent:before {
+        height: 60px;
+    }
+}

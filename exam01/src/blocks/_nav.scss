@@ -1,0 +1,19 @@
+.nav {
+    display: none;
+    width: 100vw;
+    height: 80px;
+    background-color: #5474fd;
+
+    &__logo {
+        position: absolute;
+        left: 330px;
+    }
+
+    &__toogle {
+        display: none;
+    }
+
+    &__list {
+        margin: 0;
+    }
+}

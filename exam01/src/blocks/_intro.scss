@@ -1,0 +1,115 @@
+.intro {
+    background: url(../dist/img/intro-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 812px;
+    text-align: center;
+    color: $First-Color;
+
+    &__box {
+        width: 670px;
+        height: 355px;
+        padding-top: 260px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-family: $font-JB;
+        font-size: 48px;
+        letter-spacing: 5px;
+        margin: 0;
+    }
+
+    &__slogan {
+        font-family: $font-JR;
+        font-size: 22px;
+        letter-spacing: 6px;
+        font-weight: 100;
+        margin: 0;
+    }
+}
+
+.search {
+    margin-top: 45px;
+
+    @include _770 {
+        width: 500px - 100px;
+    }
+
+    &__input {
+        width: 500px;
+        height: 61px;
+        font-family: $font-JR;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #999999;
+
+        &::placeholder {
+            font-family: $font-JR;
+            font-size: 14px;
+            text-align: center;
+            letter-spacing: 2px;
+            color: #999999;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__button {
+        position: relative;
+        top: 1px;
+        width: 153px;
+        height: 65px;
+        border: 2px solid #fff;
+        margin: -5px;
+        background-color: #5474fd;
+        font-family: $font-A;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        color: $First-Color;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 63px;
+            background: rgba(243, 245, 250, 0.157);
+            transition: all 1.5s ease;
+        }
+
+        &:hover:before {
+            width: 100%;
+        }
+
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.scroll {
+    text-decoration: none;
+    position: relative;
+    top: 120px;
+    margin: 0 auto;
+    width: 105px;
+    height: 40px;
+    cursor: pointer;
+
+    font-family: $font-JR;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: $First-Color;
+
+    @include _940 {
+        display: none;
+    }
+}

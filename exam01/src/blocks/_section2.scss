@@ -1,0 +1,96 @@
+.section2 {
+    background: url(../dist/img/section2-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 685px;
+}
+
+.group {
+    width: 515px;
+    height: 380px;
+    position: relative;
+    left: 100px;
+    top: 200px;
+
+    @include _1200 {
+        width: 515px - 100px;
+    }
+
+    @include _1120 {
+        width: 415px - 100px;
+    }
+
+    @include _925 {
+        width: 315px - 100px;
+    }
+
+    &__title {
+        font-family: $font-A;
+        font-size: 36px;
+        color: $First-Color;
+        font-weight: 100;
+
+        @include _925 {
+            font-size: 36px - 7px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 0;
+        font-family: $font-JT;
+        font-size: 16px;
+        color: $Second-Color;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+}
+
+.gallery {
+    width: 475px;
+    height: 450px;
+    position: relative;
+    top: -282px;
+    left: 700px;
+
+    @include _1200 {
+        left: 700px - 100px;
+    }
+
+    @include _1120 {
+        left: 600px - 100px;
+    }
+
+    @include _1010 {
+        left: 500px - 50px;
+    }
+
+    @include _925 {
+        width: 475px - 170px;
+        left: 450px - 20px;
+        top: -282px + 50px;
+    }
+
+    @include _810 {
+        left: 430px - 40px;
+    }
+
+    @include _770 {
+        left: 390px - 25px;
+    }
+
+    &__item {
+        @include _925 {
+            height: 180px;
+        }
+    }
+
+    &__item--second {
+        position: relative;
+        left: 100px;
+
+        @include _940 {
+            left: 100px - 50px;
+        }
+    }
+}

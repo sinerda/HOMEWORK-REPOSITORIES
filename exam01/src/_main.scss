@@ -1,0 +1,19 @@
+@import "blocks/blocks";
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    /*width: 98.2vw;*/
+}
+
+.icon {
+    fill: #fff;
+    float: right;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 108px;
+    top: 18px;
+}
