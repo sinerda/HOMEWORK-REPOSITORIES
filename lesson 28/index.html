@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- ЗАДАНИЕ 1. Создать страницу, которая выводит нумерованный список песен  
+    <div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <script>
+        var playList = [
+            {
+                author: "LED ZEPPELIN",
+                song: "STAIRWAY TO HEAVEN"
+            },
+            {
+                author: "QUEEN",
+                song: "BOHEMIAN RHAPSODY"
+            },
+            {
+                author: "LYNYRD SKYNYRD",
+                song: "FREE BIRD"
+            },
+            {
+                author: "DEEP PURPLE",
+                song: "SMOKE ON THE WATER"
+            },
+            {
+                author: "JIMI HENDRIX",
+                song: "ALL ALONG THE WATCHTOWER"
+            },
+            {
+                author: "AC/DC",
+                song: "BACK IN BLACK"
+            },
+            {
+                author: "QUEEN",
+                song: "WE WILL ROCK YOU"
+            },
+            {
+                author: "METALLICA",
+                song: "ENTER SANDMAN"   // 8
+            }];
+
+        let songs = document.querySelectorAll('p'); //создаем коллекцию из тегов параграфа
+
+        for(let i = 0; i < songs.length; i++) {
+            // выводим каждый элемент массива в отдельном параграфе
+            songs[i].innerHTML = (i + 1) + '. ' + playList[i].author + ' - ' + playList[i].song;
+        }
+    </script> -->
+
+
+
+    <!-- ЗАДАНИЕ 2. Создать HTML-страницу с кнопкой "Открыть" и модальным окном. На модальном окне должен быть текст и кнопка "Закрыть". Изначально модальное окно не отображается. При клике на кнопку "Открыть" появляется модальное окно, на кнопку "Закрыть" – исчезает.  
+    <style>
+        .modal {
+            visibility: hidden;
+            width: 300px;
+            height: 180px;
+            padding: 40px;
+            margin: 0 auto;
+            border: indigo solid 2px;
+        }
+    </style>
+
+    <div>
+        <button class="open" onclick="showModal()">Открыть</button>
+        <div class="modal">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, quia laudantium provident harum quas corrupti? Rerum fugiat sit voluptas laborum. Molestias nulla adipisci temporibus repellat inventore, est nobis accusantium aspernatur.</p>
+            <button class="close" onclick="hideModal()">Закрыть</button>
+        </div>
+    </div>
+
+    <script>
+        function showModal() {
+            let modal = document.querySelector('.modal');
+            let open = document.querySelector('.open');
+            modal.style.visibility = 'visible';
+            open.style.visibility = 'hidden';
+        }
+
+        function hideModal() {
+            let modal = document.querySelector('.modal');
+            let open = document.querySelector('.open');
+            modal.style.visibility = 'hidden';
+            open.style.visibility = 'visible';
+        }
+    </script> -->
+
+
+
+    <!-- ЗАДАНИЕ 3. Создать HTML-страницу со светофором и кнопкой, которая переключает светофор на следующий цвет. -->
+    
+    <style>
+        body {margin: 0;}
+        .main { background-color: darkgray; }
+
+        .traffic {
+            margin: 0 auto;    
+            height: 100vh;        
+        }
+
+        .change_color {
+            position: absolute;
+            left: 490px;
+            top: 200px;
+        }
+
+        /* чтобы сделать определённый цвет "потухшим", накладываем на него круглый полупрозрачный div */
+        .red,
+        .yellow,
+        .green {
+            position: absolute;
+            left: 116px;
+            width: 39px;
+            height: 39px;
+            border-radius: 50%;
+            background-color: #333;
+            opacity: 85%;
+        }
+
+        .red {           
+            top: 87px;
+            
+        }
+
+        .yellow {
+            top: 136px;
+            
+        }
+
+        .green {
+            left: 117px;
+            top: 185px;
+            visibility: hidden;  /* hidden - это АКТИВНЫЙ цвет светофора при старте скрипта */
+        }
+    </style>
+
+    <div class="main">
+        <div class="traffic">
+            <img height="514px" src="Traffic_lights.jpg" alt="">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+        </div>
+        <button class="change_color" onclick="nextColor()">Следующий цвет</button>
+    </div>
+
+    <script>
+        function nextColor() {
+            //получаем "коллекцию" цветов светофора
+            let traf = document.querySelector('.traffic');
+            let colors = traf.querySelectorAll('div'); 
+
+            // определяем какой цвет в данный момент "горит" по свойству visibility
+            let active = 0;
+            for (let i = 0; i < colors.length; i++) {
+                let style = getComputedStyle(colors[i]);
+                if (style.visibility == 'hidden') { active = i; break; }
+            }  
+            // отключаем текущий цвет...
+            colors[active].style.visibility = 'visible';
+            // ...и включаем следующий
+            if (active == 2) { active = 0; } else active += 1;
+            colors[active].style.visibility = 'hidden';
+        }
+    </script>
+</body>
+</html>
