@@ -1,0 +1,388 @@
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("../dist/fonts/gothambold1.woff") format("woff");
+  font-display: auto;
+}
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("../dist/fonts/GothamBook.woff") format("woff");
+  font-display: auto;
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../dist/fonts/OpenSans-Regular.woff") format("woff");
+  font-display: auto;
+}
+@font-face {
+  font-family: "OpenSans-Italic";
+  src: url("../dist/fonts/OpenSans-Italic.woff") format("woff");
+  font-display: auto;
+}
+.section-two {
+  width: 1600px;
+  height: 1633px;
+}
+
+.t-box {
+  width: 345px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+.t-box__separator {
+  width: 100px;
+  height: 1px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #2c4058;
+}
+.t-box__title {
+  text-align: center;
+  font-family: "Gotham-Bold", sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #2c4058;
+}
+
+.content {
+  width: 1600px;
+  height: 540px;
+  position: relative;
+  top: 173px;
+}
+
+.pic-box {
+  width: 846px;
+  height: 540px;
+  position: relative;
+  float: left;
+}
+.pic-box__rectangle {
+  width: 585px;
+  height: 470px;
+  background-color: #55b7ff;
+  z-index: 0;
+}
+.pic-box__figure {
+  position: absolute;
+  margin: 0;
+  top: 69px;
+  left: 215px;
+  overflow: hidden;
+  z-index: 1;
+  width: 631px;
+  height: 468px;
+}
+.pic-box__picture {
+  width: 100%;
+  margin: -8% 0 0 0;
+}
+
+.project {
+  position: relative;
+  float: right;
+  padding-top: 60px;
+  top: 69px;
+  right: 215px;
+  width: 470px;
+  height: 410px;
+}
+.project__title-adjective {
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #2c4058;
+  margin: 0;
+}
+.project__title {
+  font-family: "Gotham-Bold", sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #2c4058;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.project__text {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 18px;
+  color: #4b5562;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+.project__more-details {
+  width: 190px;
+  height: 50px;
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: solid 1px #2c4058;
+  color: #2c4058;
+  background-color: #fff;
+}
+.project__more-details:active, .project__more-details:focus {
+  outline: none;
+}
+.project__city {
+  margin-top: 60px;
+  margin-left: 28px;
+  font-family: "OpenSans-Italic", sans-serif;
+  font-size: 18px;
+  color: #2c4058;
+}
+.project__icon {
+  position: relative;
+  top: -38px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+}
+.project__svg {
+  fill: #2c4058;
+}
+
+.button {
+  width: 190px;
+  height: 50px;
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: solid 1px #2c4058;
+  color: #2c4058;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 1s ease;
+}
+.button:active, .button:focus {
+  outline: none;
+}
+.button:hover {
+  background-color: #2c4058;
+  color: #fff;
+  transition: all 1s;
+}
+
+.content--second {
+  width: 1600px;
+  height: 820px;
+  position: relative;
+  display: block;
+  top: 170px;
+  /* z-index: -1; */
+}
+
+.project--two {
+  float: left;
+  margin-top: 140px;
+  padding-top: 125px;
+  top: 0;
+  right: 0;
+  left: 215px;
+  height: 540px;
+}
+
+.pic-box--two {
+  float: right;
+  margin-top: 140px;
+}
+
+.rectangle--second {
+  background-color: #7e5aff;
+  position: relative;
+  float: right;
+}
+
+.figure--second {
+  float: left;
+  left: 0;
+  overflow: visible;
+}
+
+.picture--second {
+  margin: 0;
+}
+
+.section-five-MAP {
+  width: 1600px;
+  height: 700px;
+}
+
+.map {
+  width: 1600px;
+  height: 700px;
+}
+
+.contact-and-submit {
+  z-index: 1;
+  width: 770px;
+  height: 450px;
+  background-color: white;
+  position: relative;
+  top: -303px;
+  margin: 0 auto;
+  box-shadow: 0px -1px 11px 5px rgba(34, 60, 80, 0.24);
+}
+
+.t-box--sec-five {
+  z-index: 2;
+  top: 60px;
+}
+
+.title--sec-five {
+  margin-top: 25px;
+}
+
+.contact-box {
+  z-index: 2;
+  float: left;
+  position: relative;
+  top: 80px;
+  padding-left: 55px;
+  width: 298px;
+  height: 270px;
+}
+.contact-box__wrap {
+  width: 300px;
+  height: 25px;
+  margin-bottom: 40px;
+}
+.contact-box__contact {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 28px;
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  color: #2c4058;
+  text-decoration: none;
+}
+.contact-box__icon {
+  position: relative;
+  top: -18px;
+  width: 18px;
+  height: 18px;
+}
+.contact-box__svg {
+  fill: #7e5aff;
+}
+
+.submit-box {
+  z-index: 2;
+  float: right;
+  position: relative;
+  top: 80px;
+  width: 370px;
+  height: 270px;
+}
+.submit-box__input {
+  position: relative;
+  top: -20px;
+  margin-bottom: 15px;
+  width: 310px;
+  height: 60px;
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 18px;
+  color: #2c4058;
+  border: none;
+  border-bottom: 1px solid #2c4058;
+  opacity: 45%;
+}
+.submit-box__input:active, .submit-box__input:focus {
+  outline: none;
+  opacity: 100%;
+}
+.submit-box__button {
+  position: relative;
+  float: right;
+  right: 55px;
+  width: 140px;
+  background-color: transparent;
+}
+
+.back-img {
+  z-index: 1;
+  position: relative;
+  width: 770px;
+  height: 234px;
+  margin: 0;
+  top: 116px;
+  background: url(../img/city@2x.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 5%;
+}
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  top: 210px;
+  width: 770px;
+  height: 110px;
+}
+
+.footer {
+  z-index: 0;
+  position: relative;
+  width: 1600px;
+  height: 523px;
+  background: linear-gradient(to right, rgba(85, 183, 255, 0.95), rgba(126, 90, 255, 0.95)), url("../img/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer__logo {
+  width: 241px;
+  height: 54px;
+  background: url("../img/Logo.png");
+}
+.footer__copyright {
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+.footer__social {
+  position: absolute;
+  left: 600px;
+  bottom: 60px;
+  width: 170px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social:hover {
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-color: #fff;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social__icon {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+.social__svg {
+  fill: #fff;
+}
+.social:hover .social__svg {
+  fill: #7e5aff;
+}
+
+.copyright-box {
+  position: relative;
+  top: 25px;
+  width: 435px;
+  height: 20px;
+}
+/*# sourceMappingURL=style.css.map */

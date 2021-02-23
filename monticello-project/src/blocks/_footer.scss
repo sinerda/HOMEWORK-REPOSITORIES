@@ -1,0 +1,87 @@
+.wrap {
+    // background-color: yellowgreen;
+    position: relative;
+    margin: 0 auto;
+    top: 210px;
+    width: 770px;
+    height: 110px;
+}
+
+.footer {
+    z-index: 0;
+    position: relative;
+    width: 1600px;
+    height: 523px;
+    background: linear-gradient(
+            to right,
+            rgba(85, 183, 255, 0.95),
+            rgba(126, 90, 255, 0.95)
+        ),
+        url("../img/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__logo {
+        width: 241px;
+        height: 54px;
+        background: url("../img/Logo.png");
+    }
+
+    &__copyright {
+        font-family: $font-Gotham-Book;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    &__social {
+        // background-color: yellow;
+        // border: 1px solid #fff;
+        position: absolute;
+        left: 600px;
+        bottom: 60px;
+        width: 170px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.social {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        cursor: pointer;
+        border: 1px solid #fff;
+        background-color: #fff;
+        transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__svg {
+        fill: #fff;
+    }
+
+    &:hover &__svg {
+        fill: $color-global-two;
+    }
+}
+
+.copyright-box {
+    position: relative;
+    top: 25px;
+    width: 435px;
+    height: 20px;
+}

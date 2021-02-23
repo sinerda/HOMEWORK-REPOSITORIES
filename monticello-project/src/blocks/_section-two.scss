@@ -1,0 +1,203 @@
+.section-two {
+    width: 1600px;
+    height: 1633px;
+}
+
+.t-box {
+    width: 345px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+
+    &__separator {
+        width: 100px;
+        height: 1px;
+        margin: 0 auto;
+        position: relative;
+        background-color: $color-f-dark;
+    }
+
+    &__title {
+        text-align: center;
+        font-family: $font-Gotham-Bold;
+        font-size: 44px;
+        text-transform: uppercase;
+        color: $color-f-dark;
+    }
+}
+
+.content {
+    width: 1600px;
+    height: 540px;
+    position: relative;
+    top: 173px;
+}
+
+.pic-box {
+    width: 846px;
+    height: 540px;
+    position: relative;
+    float: left;
+
+    &__rectangle {
+        width: 585px;
+        height: 470px;
+        background-color: $color-global-one;
+        z-index: 0;
+    }
+
+    &__figure {
+        position: absolute;
+        margin: 0;
+        top: 69px;
+        left: 215px;
+        overflow: hidden;
+        z-index: 1;
+        width: 631px;
+        height: 468px;
+    }
+
+    &__picture {
+        width: 100%;
+        margin: -8% 0 0 0;
+    }
+}
+
+.project {
+    position: relative;
+    float: right;
+    padding-top: 60px;
+    top: 69px;
+    right: 215px;
+    width: 470px;
+    height: 410px;
+
+    &__title-adjective {
+        font-family: $font-Gotham-Book;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: $color-f-dark;
+        margin: 0;
+    }
+
+    &__title {
+        font-family: $font-Gotham-Bold;
+        font-size: 44px;
+        text-transform: uppercase;
+        color: $color-f-dark;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    &__text {
+        font-family: $font-OpenSans-R;
+        font-size: 18px;
+        color: #4b5562;
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+
+    &__more-details {
+        width: 190px;
+        height: 50px;
+        font-family: $font-Gotham-Book;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: solid 1px $color-f-dark;
+        color: $color-f-dark;
+        background-color: #fff;
+
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__city {
+        margin-top: 60px;
+        margin-left: 28px;
+        font-family: $font-OpenSans-I;
+        font-size: 18px;
+        color: $color-f-dark;
+    }
+
+    &__icon {
+        position: relative;
+        top: -38px;
+        left: 1px;
+        width: 18px;
+        height: 18px;
+    }
+
+    &__svg {
+        fill: $color-f-dark;
+    }
+}
+
+.button {
+    width: 190px;
+    height: 50px;
+    font-family: $font-Gotham-Book;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: solid 1px $color-f-dark;
+    color: $color-f-dark;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 1s ease;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $color-f-dark;
+        color: #fff;
+        transition: all 1s;
+    }
+}
+
+// МОДИФИКАТОРЫ
+
+.content--second {
+    width: 1600px;
+    height: 820px;
+    position: relative;
+    display: block;
+    top: 170px;
+    /* z-index: -1; */
+    // background-color: blueviolet;
+}
+
+.project--two {
+    float: left;
+    margin-top: 140px;
+    padding-top: 125px;
+    top: 0;
+    right: 0;
+    left: 215px;
+    height: 540px;
+}
+
+.pic-box--two {
+    float: right;
+    margin-top: 140px;
+}
+
+.rectangle--second {
+    background-color: $color-global-two;
+    position: relative;
+    float: right;
+}
+
+.figure--second {
+    float: left;
+    left: 0;
+    overflow: visible;
+}
+
+.picture--second {
+    margin: 0;
+}

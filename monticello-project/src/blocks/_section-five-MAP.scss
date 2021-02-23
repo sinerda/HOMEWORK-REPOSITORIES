@@ -1,0 +1,118 @@
+.section-five-MAP {
+    width: 1600px;
+    height: 700px;
+}
+
+.map {
+    width: 1600px;
+    height: 700px;
+}
+
+.contact-and-submit {
+    z-index: 1;
+    width: 770px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -303px;
+    margin: 0 auto;
+    box-shadow: 0px -1px 11px 5px rgba(34, 60, 80, 0.24);
+}
+
+.t-box--sec-five {
+    z-index: 2;
+    top: 60px;
+}
+
+.title--sec-five {
+    margin-top: 25px;
+}
+
+.contact-box {
+    z-index: 2;
+    float: left;
+    position: relative;
+    top: 80px;
+    padding-left: 55px;
+    width: 298px;
+    height: 270px;
+
+    &__wrap {
+        width: 300px;
+        height: 25px;
+        margin-bottom: 40px;
+    }
+
+    &__contact {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 28px;
+        font-family: $font-Gotham-Book;
+        font-size: 18px;
+        font-style: normal;
+        color: $color-f-dark;
+        text-decoration: none;
+    }
+
+    &__icon {
+        position: relative;
+        top: -18px;
+        width: 18px;
+        height: 18px;
+    }
+
+    &__svg {
+        fill: $color-global-two;
+    }
+}
+
+.submit-box {
+    z-index: 2;
+    float: right;
+    position: relative;
+    top: 80px;
+    width: 370px;
+    height: 270px;
+
+    &__input {
+        position: relative;
+        top: -20px;
+        margin-bottom: 15px;
+        width: 310px;
+        height: 60px;
+        font-family: $font-Gotham-Book;
+        font-size: 18px;
+        color: $color-f-dark;
+        border: none;
+        border-bottom: 1px solid $color-f-dark;
+        opacity: 45%;
+
+        &:active,
+        &:focus {
+            outline: none;
+            opacity: 100%;
+        }
+    }
+
+    &__button {
+        position: relative;
+        float: right;
+        right: 55px;
+        width: 140px;
+        background-color: transparent;
+    }
+}
+
+.back-img {
+    z-index: 1;
+    position: relative;
+    width: 770px;
+    height: 234px;
+    margin: 0;
+    top: 116px;
+    background: url(../img/city@2x.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 5%;
+}
