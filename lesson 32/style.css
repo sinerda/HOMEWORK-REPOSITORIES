@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+}
+
+.wrap-search {
+    padding-top: 2px;
+    margin: 0 auto;
+    position: relative;
+    width: 500px;
+}
+
+.h1-title {
+    text-align: center;
+    margin: 15px;
+}
+
+.span-beta {
+    vertical-align: super;
+    font-size: 12px;
+}
+
+.input {
+    width: 350px;
+}
+
+.header {
+    background-color: rgb(235, 235, 235);
+    height: 125px;
+    border-bottom: 2px solid gold;
+}
+
+.main {
+    margin: 0 auto;
+    width: 500px;
+    padding: 30px 30px 10px 30px;
+}
+
+.wrap-h3 {
+    height: 24px;
+    margin-bottom: 16px;
+    transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wrap-h3:hover {
+    background-color: #ffd700d4;
+    transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wrap-h3:hover .btn-details {
+    transition: all;
+    visibility: visible;
+    transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.btn-details {
+    position: relative;
+    top: -39px;
+    left: 440px;
+    visibility: hidden;
+}
+
+.btn-details:hover {
+    cursor: pointer;
+}
+
+.not-found {
+    font-size: 21px;
+}
+
+.pages {
+    visibility: hidden;
+    margin: 0 auto;
+    width: 840px;
+    border-top: solid darkgray;
+    padding: 20px 0 20px;
+}
+
+.btn-pages {
+    position: relative;
+    width: 840px;
+    left: 7px;
+}
+
+.page-num {
+    margin: 0px 3px;
+    width: 39px;
+    height: 32px;
+    padding-right: 3px;
+    font-size: 19px;
+    padding-left: 3px;
+    border: solid 1px gold;
+    border-radius: 4px;
+    color: gold;
+    background-color: darkgray;
+}
+
+.page-num + .active {
+    background-color: gold;
+    color: #000;
+    width: 38px;
+    height: 38px;
+    font-size: 21px;
+}
+
+.back {
+    width: 90px;
+}
+
+.one {
+    margin: 0px 3px;
+    width: 38px;
+    height: 38px;
+    padding-right: 3px;
+    font-size: 21px;
+    padding-left: 3px;
+    border: solid 1px gold;
+    border-radius: 4px;
+    background-color: gold;
+    color: #000;
+}
+
+.page-num:hover {
+    color: #fff;
+    background-color: #6d6c6c;
+    cursor: pointer;
+}
+
+.page-num:active {
+    background-color: gold;
+    color: #000;
+}
+
+.page-num:active,
+.page-num:focus {
+    outline: none;
+}
+
+.modal {
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    padding: 15px;
+    right: 256px;
+    bottom: 10px;
+    width: 737px;
+    height: 600px;
+    background-color: rgb(243, 211, 211);
+}
+
+.poster {
+    float: right;
+    position: relative;
+    top: 30px;
+    width: 200px;
+    height: 300px;
+}
+
+.poster img {
+    height: 100%;
+}
+
+.list-info {
+    width: 495px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.info__title {
+    text-align: center;
+}
+
+.text {
+    margin: 8px;
+}
+
+.close {
+    position: relative;
+    top: 0px;
+    left: 631px;
+}
+
+.rating {
+    position: absolute;
+    left: 513px;
+    bottom: 17px;
+    width: 188px;
+    padding: 13px;
+    background-color: darkorange;
+}
+
+.rating__title {
+    text-align: center;
+}

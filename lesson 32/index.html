@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header class="header">
+        <div class="wrap-search">
+            <h1 class="h1-title">КиноПоиск<span class="span-beta">beta</span></h1>
+            <input type="text" class="input" value="">
+            <select name="" id="" class="type-search">
+                <option value="">movie</option>
+                <option value="">series</option>
+                <option value="">episode</option>
+            </select>
+            <button onclick="getJson()" class="button-search">Найти</button>
+        </div>       
+    </header>
+    <div class="main">
+        <div class="list">
+            <!-- <div class="wrap-h3">
+                <h3>1. King Kong, 2005</h3>
+                <button class="btn-details">Details</button>
+            </div>
+            
+            <h3>2. Kong: Skull Island, 2017</h3>
+            <h3>3. King Kong, 1933</h3>
+            <h3>4. The King of Kong: A Fistful of Quarters, 2007</h3>
+            <h3>5. King Kong, 1976</h3>
+            <h3>6. King Kong vs. Godzilla, 1963</h3>
+            <h3>7. King Kong vs. Godzilla, 1963</h3>
+            <h3>8. A Countess from Hong Kong, 1967</h3>
+            <h3>9. King Kong Lives, 1986</h3>
+            <h3>10. Already Tomorrow in Hong Kong, 2015</h3>  -->
+        </div>
+        <div class="modal">
+            <button class="close" onclick="Close()">Закрыть окно</button>
+            <figure class="poster">
+                <img>
+            </figure>
+            <div class="list-info">
+                <h2 class="info__title">Finding Nemo, 2003</h2>
+                <p class="text"><span>"Rated"</span>:"G",</p>
+                <p class="text"><span>"Released"</span>:"30 May 2003",</p>
+                <p class="text"><span>"Runtime"</span>:"100 min",</p>
+                <p class="text">"Genre":"Animation, Adventure, Comedy, Family",</p>
+                <p class="text">"Director":"Andrew Stanton, Lee Unkrich(co-director)",</p>
+                <p class="text">"Writer":"Andrew Stanton (original story by), Andrew Stanton (screenplay by), Bob Peterson (screenplay by), David
+                Reynolds (screenplay by)",</p>
+                <p class="text">"Actors":"Albert Brooks, Ellen DeGeneres, Alexander Gould, Willem Dafoe",</p>
+                <p class="text">"Plot":"After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey
+                to bring him home.",</p>
+                <p class="text">"Language":"English",</p>
+                <p class="text">"Country":"USA, Australia",</p>
+                <p class="text">"Awards":"Won 1 Oscar. Another 48 wins & 62 nominations.",</p>
+                <p class="text">"Type":"movie",</p>
+                <p class="text">"DVD":"N/A",</p>
+                <p class="text">"BoxOffice":"$380,843,261",</p>
+                <p class="text">"Production":"Pixar Animation Studios",</p>
+            </div>
+            <div class="rating">
+                <h3 class="rating__title">Ratings</h3>
+                <p class="text"><span>Internet Movie Database</span>:</p>
+                <p class="text"><span>Rotten Tomatoes</span>:</p>
+                <p class="text"><span>Metacritic</span>:</p>
+                <p class="text"><span>Metascore</span>:</p>
+                <p class="text"><span>imdbRating</span>:</p>
+            </div>
+        </div>
+    </div>
+    <div class="pages">
+        <div class="btn-pages"> 
+            <button class="page-num back" id="back">Назад</button>
+            <button class="page-num">1</button>
+            <button class="page-num">2</button>
+            <button class="page-num">3</button>
+            <button class="page-num">4</button>
+            <button class="page-num">5</button>
+            <button class="page-num">6</button>
+            <button class="page-num">7</button>
+            <button class="page-num">8</button>
+            <button class="page-num">9</button>
+            <button class="page-num">10</button>
+            <button class="page-num">11</button>
+            <button class="page-num">12</button>
+            <button class="page-num">13</button>
+            <button class="page-num">14</button>
+            <button class="page-num">15</button>
+            <button class="page-num back" id="forward" onclick="btnForward()">Вперёд</button>
+        </div>   
+    </div>
+    </body>
+</html>
