@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson 33 - Карты Google Maps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="map"></div>
+  <div class="control">
+    <label for="">Откуда:</label>
+    <input type="text" value="Харьков" id="start">
+    <label for="">Куда:</label>
+    <input type="text" value="Николаев" id="end">
+    <button id="directions">Проложить маршрут</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAw405oTH0WcWtjlazMMgLd4n2fhOZ0E0&callback=initMap&libraries=&v=weekly"
+      async></script>
+</body>
+
+</html>

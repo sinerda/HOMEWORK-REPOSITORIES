@@ -1,0 +1,30 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+    height: 100%;
+}
+
+.control {
+    position: absolute;
+    top: 10px;
+    left: 21%;
+    z-index: 5;
+    background-color: rgb(96 199 133);
+    padding: 0px 13px;
+    height: 35px;
+    width: 805px;
+}
+
+input {
+    width: 270px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 7px;
+}
