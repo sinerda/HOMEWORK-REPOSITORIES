@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("fonts/Poppins-Regular.woff") format("woff");
+    font-display: auto;
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("fonts/Poppins-SemiBold.woff") format("woff");
+    font-display: auto;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+    position: relative;
+    margin: 60px auto 0px;
+    width: 1145px;
+    height: 345px;
+}
+
+.text-little {
+    margin-bottom: 0px;
+    font-family: "Poppins-SemiBold", sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text-big {
+    margin-top: 30px;
+    font-family: "Poppins-Regular", sans-serif;
+    font-size: 86px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    line-height: 90px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.geometric {
+    position: absolute;
+}
+
+#plus {
+    top: -22px;
+    left: 937px;
+}
+
+#triangle {
+    top: 190px;
+    left: -40px;
+}
+
+.wrap-slider {
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    margin: 100px 0;
+    width: 1920px;
+    height: 412px;
+    display: flex;
+}
+
+.wrap-picture {
+    width: 440px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+#pic-1 {
+    margin: 0 0 0 -15%;
+}
+
+#pic-2 {
+    margin: -11% 0 0% -23%;
+}
+
+#pic-3 {
+    margin: -14% 0 0 -58%;
+}
+
+#pic-4 {
+    margin: -43% 0 0 -18%;
+}
+
+#pic-5 {
+    margin: -14% 0 0 -4%;
+    height: 150%;
+}
+
+#pic-6 {
+    margin: -17% 0 0 -48%;
+    height: 138%;
+}
+
