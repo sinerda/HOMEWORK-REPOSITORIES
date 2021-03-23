@@ -1,0 +1,55 @@
+.partition-name {
+    position: absolute;
+    background-color: aquamarine;
+    opacity: 0.6;
+    &__icon {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        // width: 52px;
+        height: 60px;
+    }
+    &__text {
+        margin: 40px 0 0;
+        font-family: "ProximaNova-Semibold", sans-serif;
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $color-white-one;
+    }
+    &--cell {
+        width: 380px;
+        height: 400px;
+        &__text {
+            margin: 25px 0 15px;
+            font-family: "PTSans-Bold", sans-serif;
+            font-size: 24px;
+            color: $color-gray-one;
+            text-align: center;
+        }
+        &__detail {
+            margin: 0;
+            font-family: "PTSans-Italic", sans-serif;
+            font-size: 18px;
+            color: $color-gray-one;
+            text-align: center;
+        }
+    }
+    &--back {
+        background-color: $color-back-two;
+    }
+    &--table {
+        width: 405px;
+        height: 310px;
+        &__detail {
+            display: block;
+            margin: 0 auto;
+            margin-top: 90px;
+            width: 350px;
+            text-align: center;
+            font-family: "PTSans-Italic", sans-serif;
+            font-size: 18px;
+            color: $color-white-one;
+        }
+    }
+}
